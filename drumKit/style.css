@@ -1,0 +1,72 @@
+:root {
+    --color-black: #080808;
+    --color-light-grey: #dbdbdb;
+    --color-yellow: #fcdd2d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+
+}
+
+.main-section {
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('/drumKit/img/bg.jpg') no-repeat center center/cover;
+        overflow: hidden;
+}
+
+.keys {
+    min-height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.key {
+    height: 10rem;
+    width: 10rem;
+    color: var(--color-light-grey);
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid var(--color-light-grey);
+    padding: 3rem;
+    margin-right: 2rem;
+    background-color: rgba(8, 8, 8, 0.411);
+    transition: all .07s;
+}
+
+.key span {
+      color: var(--color-yellow);
+      font-size: 1.4rem;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: var(--color-yellow);
+    box-shadow: 0 0 1rem var(--color-yellow);
+}

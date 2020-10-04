@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Epilogue',
+    sans-serif;
+
+}
+
+.main__section {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4e4e4e;
+    background-color: #ecf0f3;
+}
+
+.main__section-container {
+    width: 43rem;
+    height: 90rem;
+    padding: 6rem 3.5rem;
+    border-radius: 4rem;
+    background-color: #ecf0f3;
+    box-shadow: 1.3rem 1.3rem 2rem #f0f3f5,
+        -1.3rem -1.3rem 2rem #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    letter-spacing: .5rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+mark{
+    font-size: 4rem;
+    font-style: italic;
+    color: rgb(100, 96, 96);
+     background: transparent;
+     background-image: linear-gradient(120deg, #12a4d0 0, #2ac955 100%);
+     background-repeat: no-repeat;
+     background-size: 100% .28em;
+     background-position: 0 70%;
+     position: relative;
+     }
+
+.logo {
+    height: 20rem;
+    width: 20rem;
+    background: url('/n_clock/img/fe1b294858db34c18a463aea969b0233.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    border-radius: 18%;
+    border: 8px solid #faf9f9;
+    box-shadow: 0px 0px 2px #fcfafa,
+    0px 0px 0px 5px #ecf0f3, 8px 8px 15px #c7c7c9,
+      -8px -8px 15px #fff;
+}
+
+.clock{
+    margin-top: 3rem;
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/n_clock/img/clock.png) no-repeat center center/cover;
+    border: 8px solid #faf9f9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px #fcfafa,
+   inset 0px 0px 2px #fffefe,
+   0px 0px 2px #aaa4a4,
+   inset 0px 0px 2px #c5c4c4;
+
+}
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    z-index: 100000;
+    border-radius: 50%;
+}
+
+.hour,
+.min,
+.sec {
+    position: absolute;
+}
+
+.hour,
+.hr {
+    width: 160px;
+    height: 160px;
+}
+
+.min,
+.mn {
+    width: 190px;
+    height: 190px;
+}
+
+.sec,
+.sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #ffffff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #008eff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
